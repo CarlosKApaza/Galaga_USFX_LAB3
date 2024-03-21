@@ -36,5 +36,9 @@ public:
 public:
 	virtual void Mover(float DeltaTime);
 	//virtual void Escapar(float velocidadY, float posicion);
+//protected:
+//	// Velocidad en el eje Y
+//	UPROPERTY(EditAnywhere, Category = "Nave")
+//	float VelocidadY;
 };
 

@@ -58,7 +58,10 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ANaveEnemigaCaza)
 
 
-#define Galaga_USFX_LAB2_master_Source_Galaga_USFX_LAB2_NaveEnemigaCaza_h_15_PRIVATE_PROPERTY_OFFSET
+#define Galaga_USFX_LAB2_master_Source_Galaga_USFX_LAB2_NaveEnemigaCaza_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__VelocidadY() { return STRUCT_OFFSET(ANaveEnemigaCaza, VelocidadY); }
+
+
 #define Galaga_USFX_LAB2_master_Source_Galaga_USFX_LAB2_NaveEnemigaCaza_h_12_PROLOG
 #define Galaga_USFX_LAB2_master_Source_Galaga_USFX_LAB2_NaveEnemigaCaza_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

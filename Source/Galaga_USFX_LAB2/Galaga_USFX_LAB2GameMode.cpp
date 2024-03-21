@@ -54,13 +54,13 @@ void AGalaga_USFX_LAB2GameMode::BeginPlay()
 	if (World != nullptr)
 	{
 		//spawenado las naves de la clase NaveEnemigaCaza con un ciclo
-		for (int i = 0; i < 15; i++) {
+		for (int i = 0; i < 25; i++) {
 			ubicacionActual.Y += 250.0f; // Sumar 250 unidades a la coordenada Y en cada iteración
 			ANaveEnemigaCaza* NaveEnemigaCazaActual = World->SpawnActor<ANaveEnemigaCaza>(ubicacionActual, rotacionNave);
 			TANavesEnemigasCaza.Add(NaveEnemigaCazaActual);
 		}
-
-		ubicacionActual.X = ubicacionNaveInicial.X = .0f;
+		// spawenado las naves de la clase NaveEnemigaTransporte con un ciclo
+		ubicacionActual.X = ubicacionNaveInicial.X = -300.0f;
 		ubicacionActual.Y = ubicacionNaveInicial.Y = 50.0f;
 
 		for (int i = 0; i < 15; i++) {
@@ -68,8 +68,8 @@ void AGalaga_USFX_LAB2GameMode::BeginPlay()
 			ANaveEnemigaTransporte* NaveEnemigaTransporteActual = World->SpawnActor<ANaveEnemigaTransporte>(ubicacionActual, rotacionNave);
 			TANavesEnemigasTransporte.Add(NaveEnemigaTransporteActual);
 		}
-
-		ubicacionActual.X = ubicacionNaveInicial.X = -760.0f;
+		// spawenado las naves de la clase NaveEnemigaEspia con un ciclo
+		ubicacionActual.X = ubicacionNaveInicial.X = 300.0f;
 		ubicacionActual.Y = ubicacionNaveInicial.Y = 50.0f;
 
 		for (int i = 0; i < 15; i++) {
