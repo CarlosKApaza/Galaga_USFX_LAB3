@@ -24,4 +24,8 @@ public:
 
 public:
 	virtual void Mover(float DeltaTime);
+protected:
+	// Velocidad en el eje Y
+	UPROPERTY(EditAnywhere, Category = "Nave")
+	float VelocidadYEspia;
 };

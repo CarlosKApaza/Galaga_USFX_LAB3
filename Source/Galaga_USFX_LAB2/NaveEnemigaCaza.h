@@ -29,5 +29,5 @@ public:
 protected:
 	// Velocidad en el eje Y
 	UPROPERTY(EditAnywhere, Category = "Nave")
-	float VelocidadY;
+	float VelocidadYCaza;
 };

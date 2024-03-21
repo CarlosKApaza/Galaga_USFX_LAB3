@@ -59,7 +59,7 @@ public: \
 
 
 #define Galaga_USFX_LAB2_master_Source_Galaga_USFX_LAB2_NaveEnemigaCaza_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__VelocidadY() { return STRUCT_OFFSET(ANaveEnemigaCaza, VelocidadY); }
+	FORCEINLINE static uint32 __PPO__VelocidadYCaza() { return STRUCT_OFFSET(ANaveEnemigaCaza, VelocidadYCaza); }
 
 
 #define Galaga_USFX_LAB2_master_Source_Galaga_USFX_LAB2_NaveEnemigaCaza_h_12_PROLOG

@@ -32,9 +32,9 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemigaCaza() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_VelocidadY_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_VelocidadYCaza_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_VelocidadY;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_VelocidadYCaza;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -51,16 +51,16 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemigaCaza() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANaveEnemigaCaza_Statics::NewProp_VelocidadY_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANaveEnemigaCaza_Statics::NewProp_VelocidadYCaza_MetaData[] = {
 		{ "Category", "Nave" },
 		{ "Comment", "// Velocidad en el eje Y\n" },
 		{ "ModuleRelativePath", "NaveEnemigaCaza.h" },
 		{ "ToolTip", "Velocidad en el eje Y" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ANaveEnemigaCaza_Statics::NewProp_VelocidadY = { "VelocidadY", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANaveEnemigaCaza, VelocidadY), METADATA_PARAMS(Z_Construct_UClass_ANaveEnemigaCaza_Statics::NewProp_VelocidadY_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANaveEnemigaCaza_Statics::NewProp_VelocidadY_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ANaveEnemigaCaza_Statics::NewProp_VelocidadYCaza = { "VelocidadYCaza", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANaveEnemigaCaza, VelocidadYCaza), METADATA_PARAMS(Z_Construct_UClass_ANaveEnemigaCaza_Statics::NewProp_VelocidadYCaza_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANaveEnemigaCaza_Statics::NewProp_VelocidadYCaza_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ANaveEnemigaCaza_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANaveEnemigaCaza_Statics::NewProp_VelocidadY,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANaveEnemigaCaza_Statics::NewProp_VelocidadYCaza,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ANaveEnemigaCaza_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ANaveEnemigaCaza>::IsAbstract,
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemigaCaza() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANaveEnemigaCaza, 2883037972);
+	IMPLEMENT_CLASS(ANaveEnemigaCaza, 1525749562);
 	template<> GALAGA_USFX_LAB2_API UClass* StaticClass<ANaveEnemigaCaza>()
 	{
 		return ANaveEnemigaCaza::StaticClass();
