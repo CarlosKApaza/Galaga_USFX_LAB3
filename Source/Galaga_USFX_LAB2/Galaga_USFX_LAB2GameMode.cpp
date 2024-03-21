@@ -23,7 +23,7 @@ void AGalaga_USFX_LAB2GameMode::BeginPlay()
 	FRotator rotacionNave = FRotator(0.0f, 0.0f, 0.0f);
 
 	//Ubicacion inicial de las naves enemigas
-	FVector ubicacionNaveInicial = FVector(-380.0f, 50.0f, 180.0f);
+	FVector ubicacionNaveInicial = FVector(-380.0f, -200.0f, 180.0f);
 	FVector ubicacionActual = ubicacionNaveInicial;
 	UWorld* const World = GetWorld();
 	if (World != nullptr)
@@ -36,7 +36,7 @@ void AGalaga_USFX_LAB2GameMode::BeginPlay()
 		}
 		// Actualizar la ubicación inicial para las naves de la clase NaveEnemigaTransporte
 		ubicacionActual.X = ubicacionNaveInicial.X = -70.0f;
-		ubicacionActual.Y = ubicacionNaveInicial.Y = 50.0f;
+		ubicacionActual.Y = ubicacionNaveInicial.Y = -200.0f;
 
 		for (int i = 0; i < 10; i++) {
 			ubicacionActual.Y += 190.0f; // Sumar 250 unidades a la coordenada Y en cada iteración
@@ -45,7 +45,7 @@ void AGalaga_USFX_LAB2GameMode::BeginPlay()
 		}
 		// Actualizar la ubicación inicial para las naves de la clase NaveEnemigaEspia
 		ubicacionActual.X = ubicacionNaveInicial.X = 270.0f;
-		ubicacionActual.Y = ubicacionNaveInicial.Y = 50.0f;
+		ubicacionActual.Y = ubicacionNaveInicial.Y = -200.0f;
 
 		for (int i = 0; i < 10; i++) {
 			ubicacionActual.Y += 190.0f; // Sumar 250 unidades a la coordenada Y en cada iteración
