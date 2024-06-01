@@ -12,7 +12,7 @@ ANaveEnemigaCaza::ANaveEnemigaCaza()
 {
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> malla(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
 	mallaNaveEnemiga->SetStaticMesh(malla.Object);
-	VelocidadYCaza = -250.0f;
+	VelocidadYCaza = -450.0f;
 }
 
 void ANaveEnemigaCaza::Tick(float DeltaTime)
@@ -38,13 +38,13 @@ void ANaveEnemigaCaza::Mover(float DeltaTime)
     if (NuevaPosicionY <= -1850.0f)
     {
         // Cambiamos la dirección multiplicando por -1
-        VelocidadYCaza *= -1.0f;
+		NuevaPosicionY = 1850.0f;
     }
-    else if (NuevaPosicionY >= 1850.0f)
-    {
-        // Cambiamos la dirección multiplicando por -1
-        VelocidadYCaza *= -1.0f;
-    }
+    //else if (NuevaPosicionY >= 1850.0f)
+    //{
+    //    // Cambiamos la dirección multiplicando por -1
+    //    VelocidadYCaza *= -1.0f;
+    //}
     // Establecemos la nueva posición del actor
     SetActorLocation(FVector(PosicionActual.X + NuevaX, NuevaPosicionY, PosicionActual.Z));
 }

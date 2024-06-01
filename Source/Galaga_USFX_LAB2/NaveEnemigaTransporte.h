@@ -38,6 +38,6 @@ public:
 	//virtual void Escapar(float velocidadY, float posicion);
 protected:
 	UPROPERTY(EditAnywhere, Category = "Nave")
-	float VelocidadYTransporte;
+	float VelocidadXTransporte;
 };
 

@@ -12,7 +12,7 @@ ANaveEnemigaTransporte::ANaveEnemigaTransporte()
 {	
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> malla(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder.Shape_Cylinder'"));
 	mallaNaveEnemiga->SetStaticMesh(malla.Object);
-    VelocidadYTransporte = -250.0f;
+    VelocidadXTransporte = -250.0f;
 }
 
 void ANaveEnemigaTransporte::Tick(float DeltaTime)
@@ -47,22 +47,17 @@ void ANaveEnemigaTransporte::Mover(float DeltaTime)
 	FVector PosicionActual = GetActorLocation();
 
 	// Generamos nuevas coordenadas X 
-	float NuevaX = 0.0f; // No se mueve en el eje X
+	float NuevaY = 0.0f; // No se mueve en el eje X
 
 	// Calculamos la nueva posición en el eje Y
-	float NuevaPosicionY = PosicionActual.Y + (VelocidadYTransporte * DeltaTime);
+	float NuevaPosicionX = PosicionActual.X + (VelocidadXTransporte * DeltaTime);
 
 	// Verificamos si la nave ha alcanzado el límite superior o inferior
-	if (NuevaPosicionY <= -1850.0f)
+	if (NuevaPosicionX <= -1850.0f)
 	{
 		// Cambiamos la dirección multiplicando por -1
-		VelocidadYTransporte *= -1.0f;
-	}
-	else if (NuevaPosicionY >= 1850.0f)
-	{
-		// Cambiamos la dirección multiplicando por -1
-		VelocidadYTransporte *= -1.0f;
+		NuevaPosicionX = 1850.0f;
 	}
 	// Establecemos la nueva posición del actor
-	SetActorLocation(FVector(PosicionActual.X + NuevaX, NuevaPosicionY, PosicionActual.Z));
+	SetActorLocation(FVector(NuevaPosicionX, PosicionActual.Y + NuevaY, PosicionActual.Z));
 }

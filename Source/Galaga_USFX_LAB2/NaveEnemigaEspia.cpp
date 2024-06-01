@@ -12,7 +12,7 @@ ANaveEnemigaEspia::ANaveEnemigaEspia()
 {
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> malla(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Wedge_B.Shape_Wedge_B'"));
 	mallaNaveEnemiga->SetStaticMesh(malla.Object);
-	VelocidadYEspia = -250.0f;
+	VelocidadYEspia = 250.0f;
 }
 
 void ANaveEnemigaEspia::Tick(float DeltaTime)
@@ -34,14 +34,9 @@ void ANaveEnemigaEspia::Mover(float DeltaTime)
 	// Verificamos si la nave ha alcanzado el límite superior o inferior
 	if (NuevaPosicionY <= -1850.0f)
 	{
-		// Cambiamos la dirección multiplicando por -1
-		VelocidadYEspia *= -1.0f;
+		NuevaPosicionY = 1850.0f;
 	}
-	else if (NuevaPosicionY >= 1850.0f)
-	{
-		// Cambiamos la dirección multiplicando por -1
-		VelocidadYEspia *= -1.0f;
-	}
+
 	// Establecemos la nueva posición del actor
 	SetActorLocation(FVector(PosicionActual.X + NuevaX, NuevaPosicionY, PosicionActual.Z));
 }

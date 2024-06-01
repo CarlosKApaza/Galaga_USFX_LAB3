@@ -48,6 +48,9 @@ public:
 	TArray<ANaveEnemigaCaza*> TANavesEnemigasCaza;
 	TArray<ANaveEnemigaTransporte*> TANavesEnemigasTransporte;
 	TArray<ANaveEnemigaEspia*> TANavesEnemigasEspia;
+
+
+
 	/*TArray<ANaveEnemigaReabastecimiento*> TANavesEnemigasReabastecimiento;
 	TArray<ANaveEnemigaNodriza*> TANavesEnemigasNodriza;
 	TArray<ANaveEnemigaKamikaze*> TANavesEnemigasKamikaze;*/
